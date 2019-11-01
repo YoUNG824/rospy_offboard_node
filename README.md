@@ -24,7 +24,7 @@ git clone https://github.com/mavlink/mavlink.git
 cd ..
 catkin build
 ```
-```Python
+```
 cd ~/src/catkin_ws/src
 git clone  https://github.com/YoUNG824/rospy_offboard_node.git
 cd ..
