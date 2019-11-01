@@ -21,6 +21,7 @@ class PX4:
         self.current_state = None
         # self.current_heading = None
         self.tookoff_check_flag = False
+        self.state = None
 
         self.takeoff_x = -1
         self.takeoff_y = -2
@@ -138,7 +139,7 @@ class PX4:
 
                 last_request = rospy.Time.now()
 
-            if (self.current_state is "LAND") and (self.local_pos.pose.position.z < 0.3):
+            if (self.state is "LAND") and (self.local_pos.pose.position.z < 0.3):
                 if self.disarming():
                     self.current_state = "DISARMED"
 
