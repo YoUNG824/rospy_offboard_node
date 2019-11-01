@@ -24,9 +24,9 @@ git clone https://github.com/mavlink/mavlink.git
 cd ..
 catkin build
 ```
-```C++
+```Python
 cd ~/src/catkin_ws/src
-git clone  https://github.com/YoUNG824/offboard_node.git
+git clone  https://github.com/YoUNG824/rospy_offboard_node.git
 cd ..
 catkin build
 ```
@@ -44,6 +44,7 @@ make px4_sitl gazebo_iris
 ### switch pixhawk to offboard mode
 ```
 source ~/src/catkin_ws/devel/setup.bash
+cd ~/src/catkin_ws/src/rospy_offboard_pkg/src
+chmod +x offboard.py
 rosrun offboard_pkg offboard_node
 ```
-
