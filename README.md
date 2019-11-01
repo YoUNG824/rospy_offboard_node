@@ -15,7 +15,7 @@ make px4_fmu-v4_default
 ```
 ```
 cd ~/src
-mkdir -p catkin_ws
+mkdir -p catkin_ws/src
 cd catkin_ws
 catkin_init_workspace
 cd src
